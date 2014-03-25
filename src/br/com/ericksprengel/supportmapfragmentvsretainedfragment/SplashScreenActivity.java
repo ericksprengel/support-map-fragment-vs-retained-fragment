@@ -29,7 +29,7 @@ public class SplashScreenActivity extends ActionBarActivity {
         if (dataFragment == null) {
             // add the fragment
             dataFragment = new RetainedFragment();
-//            fm.beginTransaction().add(dataFragment, "data").commit();
+            fm.beginTransaction().add(dataFragment, "data").commit();
         }
 
 		if (savedInstanceState == null) {

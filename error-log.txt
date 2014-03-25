@@ -1,0 +1,38 @@
+03-25 10:16:51.681: I/Process(31941): Sending signal. PID: 31941 SIG: 9
+03-25 10:17:00.141: E/Trace(32468): error opening trace file: No such file or directory (2)
+03-25 10:17:00.381: D/AndroidRuntime(32468): Shutting down VM
+03-25 10:17:00.381: W/dalvikvm(32468): threadid=1: thread exiting with uncaught exception (group=0x4184c7d0)
+03-25 10:17:00.401: E/AndroidRuntime(32468): FATAL EXCEPTION: main
+03-25 10:17:00.401: E/AndroidRuntime(32468): java.lang.RuntimeException: Unable to start activity ComponentInfo{br.com.ericksprengel.piz/br.com.ericksprengel.supportmapfragmentvsretainedfragment.SplashScreenActivity}: android.view.InflateException: Binary XML file line #18: Error inflating class fragment
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2115)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2153)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.ActivityThread.access$700(ActivityThread.java:137)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1246)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.os.Looper.loop(Looper.java:137)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.ActivityThread.main(ActivityThread.java:5031)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at java.lang.reflect.Method.invokeNative(Native Method)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at java.lang.reflect.Method.invoke(Method.java:511)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:792)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at dalvik.system.NativeStart.main(Native Method)
+03-25 10:17:00.401: E/AndroidRuntime(32468): Caused by: android.view.InflateException: Binary XML file line #18: Error inflating class fragment
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:704)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:746)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at br.com.ericksprengel.supportmapfragmentvsretainedfragment.SplashScreenActivity$PlaceholderFragment.onCreateView(SplashScreenActivity.java:72)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1500)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:927)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1104)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:682)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1467)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:570)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1163)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.Activity.performStart(Activity.java:5068)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2088)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	... 11 more
+03-25 10:17:00.401: E/AndroidRuntime(32468): Caused by: java.lang.IllegalStateException: Fragment com.google.android.gms.maps.SupportMapFragment did not create a view.
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.support.v4.app.FragmentActivity.onCreateView(FragmentActivity.java:314)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:676)
+03-25 10:17:00.401: E/AndroidRuntime(32468): 	... 24 more
