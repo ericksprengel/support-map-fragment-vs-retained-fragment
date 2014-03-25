@@ -15,10 +15,10 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
-                <fragment
+                <FrameLayout
                     android:id="@+id/app_search_map_fragment"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    class="com.google.android.gms.maps.SupportMapFragment" />
+                    android:name="com.google.android.gms.maps.SupportMapFragment" />
 
 </LinearLayout>

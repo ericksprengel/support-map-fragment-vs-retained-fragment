@@ -1,5 +1,7 @@
 package br.com.ericksprengel.supportmapfragmentvsretainedfragment;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
 import br.com.ericksprengel.piz.R;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -69,9 +71,21 @@ public class SplashScreenActivity extends ActionBarActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_splash_screen,
+			return inflater.inflate(R.layout.fragment_splash_screen,
 					container, false);
-			return rootView;
+		}
+		
+		@Override
+		public void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			SupportMapFragment mMapFragment = (SupportMapFragment) getActivity()
+		            .getSupportFragmentManager().findFragmentById(R.id.app_search_map_fragment);
+
+		    if (mMapFragment == null) {
+		        mMapFragment = SupportMapFragment.newInstance();
+		        FragmentManager fm = getActivity().getSupportFragmentManager();
+		        fm.beginTransaction().replace(R.id.app_search_map_fragment, mMapFragment).commit();
+		    }
 		}
 	}
 
